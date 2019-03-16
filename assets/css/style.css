@@ -1,0 +1,64 @@
+body {
+    background-image: url("../images/weather.png");
+    background-size: contain;
+    background-repeat: none;
+}
+
+.container {
+    float: left;
+}
+
+header {
+    color: white;
+    background-color: orange;
+    padding: 15px;
+    margin: 20px;
+	border: 0;
+	font-size: 100%;
+	font: inherit; 
+    font-size: x-large 
+}
+
+#body {
+    color: green;
+    background-color: peachpuff;
+    font-size: larger;
+    padding-top: 25px;
+    padding-bottom: 25px; 
+}
+
+#randNum {
+    color: purple;
+    background-color: mediumspringgreen;
+   
+    width: 125px;
+    height: 45px; 
+    text-align: left;
+
+    float: left;  
+}
+
+#winsLosses {
+    color: green;
+    background-color: skyblue;
+    float: none; 
+    width:65px;
+    height: 45px;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 20px; 
+}
+
+#totalScore {
+    color: white;
+    background-color: teal;
+    float: left; 
+}
+
+#totalNumber {
+    color: white;
+    background-color: teal;
+    padding: 25px; 
+    float: none;
+
+}

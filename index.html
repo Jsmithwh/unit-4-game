@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Collector</title>
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<main class="container">
+    <section class="row">
+    <div class="col-m-4">
+        <header>Crystals Collector</header>
+    </section>
+    </main>
+
+   
+
+<main class="container">
+    <section class ="row">
+        <div class="col-m-4">
+<div id = "body">
+    <p>You will be given a random number at the start of the game!</p>
+    <p>There are four crystals below. By clicking the crystal you will add a specific amount of points to your total score.</p>
+    <p>You win by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+    <p>The value of each crystal is hidden from you until you click on it.</p>
+    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+</div>
+</div>
+</article>
+</section>
+</main>
+
+<main class="container">
+        <div class ="row">
+            <div class="col-m-4">            
+            <div id= contDiv>
+                <!--WHAT'S THIS FOR???^^^^^^-->
+    <span id="randNum">Random Number</span>
+            </div>
+        </div>
+
+        <div class ="col-m-4">
+    <span id = "winsLosses">
+        <div id = "myWins">Wins: </div>
+        <div id = "myLosses">Losses: </div>
+    </span>
+        </div>
+    </div>
+</main>       
+            
+
+
+
+<main class="container">
+    <section class ="row">
+        <div class="col-m-4">
+<div id = "pics">
+        <img id = "blueCrys" src="../unit-4-game/assets/images/blue-crystal.jpg" alt="Blue Crystal" width="100px" height="100px" onclick="blueFunction()">
+        <img id = "greenChrys" src="../unit-4-game/assets/images/green-crystal.jpg" alt="Green Crystal" width="100px" height="100px" onclick="greenFunction()">
+        <img id = "pinkChrys" src="../unit-4-game/assets/images/pink-crystal.jpg" alt="Pink Crystal" width="100px" height="100px" onclick="pinkFunction()">
+        <img id = "mulitChrys" src="../unit-4-game/assets/images/multi-crystal.jpg" alt="Multi Crystal" width="100px" height="100px" onclick="multiFunction()">
+</div>
+        </div>
+    </section>
+</main>
+
+<main class="container">
+    <section class ="row">
+        <div class="col-m-4">
+<div id = "totalScore">
+    <p>Your total score is: </p>
+        </div>
+        <div class="col-m-4">
+        <span id = "totalNumber">0</span>
+    
+</div>
+        </div>
+    </section>
+</main>
+
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
