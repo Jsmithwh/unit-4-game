@@ -3,7 +3,8 @@ var totalValue
 function myFunction() {
     //Make a random number populate in the randNum place
     var randNum = Math.floor((Math.random() * 40) + 20);
-   $("#randNum").text = randNum;
+   $("#randNum").innerHTML  = randNum;
+   console.log(randNum);
 //Make each crystal worth a random number of points each game
     var blueNum = Math.floor((Math.random() * 10) + 1);
 
@@ -23,30 +24,21 @@ $("#totalScore").innerHTML = totalValue;
 function blueFunction() {
     $("#totalScore").innerHTML = totalValue + blueNum;
     console.log(totalValue + blueNum);
-
-
+//If the number the user has created matches randNum, the user wins
+//If the number goes above, the user loses
+//Add the wins/losses to the winsLosses box
     if (totalValue == randNum) {
         myWins ++;
+        //reload page
         location.reload();
     }
     else if (totalValue > randNum) {
         myLosses ++;
+//reload page
         location.reload();
     };
-        // HOW TO RESET GAME BUT NOT WINS AND LOSSES
-    
-
-
- 
-
-    
-
-//If the number the user has created matches randNum, the user wins
-//If the number goes above, the user loses
-//Add the wins/losses to the winsLosses box
-//reset the game and generate a new number
 
 }
-//event caller- when page loads
+//something wrong with formatting- Won't display
 window.onload = myFunction;
 
